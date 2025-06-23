@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucius Meshach Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #13151a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .hero-section {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .hero-name {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .highlighted-text {
+      color: #00ff7f;
+      font-weight: bold;
+    }
+
+    .download-btn {
+      background-color: #00ff7f;
+      color: #000;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      color: #00ff7f;
+      font-size: 1.2rem;
+      margin-right: 15px;
+    }
+
+    /*.profile-img {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .profile-img img {
+      width: 100%;
+      border-radius: 50%;
+      z-index: 1;
+      position: relative;
+    }
+
+    .profile-img::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      width: 100%;
+      height: 100%;
+      border: 4px solid #00ff7f;
+      border-radius: 50%;
+      z-index: 0;
+    }*/
+<!--added-->
+    .section-title {
+      font-size: 2rem;
+      color: #00ff7f;
+      margin-bottom: 30px;
+    }
+
+    .card-custom, .fade-in {
+      background-color: #1c1e26;
+      border: none;
+      border-radius: 12px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    
+
+
+    .img-box{
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+}
+.img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    left: 20%;
+    
+}
+.img-item img{
+    position: absolute;
+    width: 87%;
+    object-fit: cover;
+    display: block;
+    margin-top: 12px;
+}
+
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+  }
+
+  
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">AK</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#mymain">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+   <section id="mymain">
+  <div class="container hero-section" >
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start" >
+        <h1 class="hero-name">Ajou Kennedy</h1>
+        <h4>I'm a <span class="highlighted-text" id="typing-text">Frontend Developer</span></h4>
+        <p class="text-light">I merge code with creativity. From crafting powerful websites to scripting soul-stirring films, I build digital experiences that inspire, educate, and entertain.</p>
+        <a href="#" class="btn download-btn">Download CV</a>
+        <div class="social-icons mt-4">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+     <!-- <div class="col-md-6 text-center mt-5 mt-md-0">
+        <div class="profile-img mx-auto">
+          <img src="IMG-20241109-WA0018.jpg" class="rounded img-fluid" width="1100" alt="Profile Image">
+        </div>
+      </div>-->
+      <div class="hom-img col-md-6">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="IMG-20241109-WA0018.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+   </section>
+  <!-- About Section -->
+   <section id="about">
+  <div class="container py-5" >
+    <h2 class="text-center section-title">About Me</h2>
+    <div class="row justify-content-center">
+      <div class=" col-6 col-md-4">
+        <div class="p-4 fade-in">
+          <p class="text-light text-center">I'm a passionate software engineer who builds clean and user-friendly digital experiences.</p>
+        </div>
+      </div><div class=" col-6 col-md-4">
+        <div class="p-4 fade-in">
+          <p class="text-light text-center">I'm  passionate in building edge-cutting AI tools which will set my stakes higher among my peers.</p>
+        </div>
+      </div><div class=" col-6 col-md-4">
+        <div class="p-4 fade-in">
+          <p class="text-light text-center"> Also as an ethusiastic film practioner, i have featuered in many films both as lead actor and supporting actor. I believe i can impact through cenema</p>
+        </div>
+      </div><div class=" col-6 col-md-4">
+        <div class="p-4 fade-in">
+          <p class="text-light text-center">Apart from acting, directing, Kennedy has a series of movies to his name as the writer. The world could be changed through scripting and story telling</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Projects Section -->
+   <section id="projects">
+  <div class="container py-5" >
+    <h2 class="text-center section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card fade-in p-3">
+          <img src="Screenshot (3).png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title text-white">Project One</h5>
+            <p class="card-text text-light">E-commerce website using HTML, CSS, JavaScript, and Firebase.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card fade-in p-3">
+          <img src="Screenshot (29).png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title text-white">Pharmarceutical Site</h5>
+            <p class="card-text text-light">A Pharmarceutical site hosted on GitHub Pages, fully responsive and animated.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card fade-in p-3">
+          <img src="Screenshot (45).png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title text-white">Booking System</h5>
+            <p class="card-text text-light">A full-stack booking app using Node.js, MongoDB, and Bootstrap UI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card fade-in p-3">
+          <img src="abaku.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title text-white">Abaku forest</h5>
+            <p class="card-text text-light">A full-length movie where i played the role of the Antagonist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card fade-in p-3">
+          <img src="neirbor.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title text-white">My neighbor</h5>
+            <p class="card-text text-light">A yet to be released Community movie which i played the lead role</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card fade-in p-3">
+          <img src="africa.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title text-white">Written Movies</h5>
+            <p class="card-text text-light">Kennedy also has more than <strong>seven</strong> movie scripts to his name, such "D0uala Knights", "Book of Truth",..etc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+   <section id="skills">
+  <div class="container py-5" >
+    <h2 class="text-center section-title">Skills</h2>
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-code-slash display-5"></i>
+        <h4 class="text-light">HTML / CSS</h4>
+        <p class="text-light">As an aspiring full-stack Developer i have a solid foundation in Frontend tolls like HTML/CSS.</p>
+      </div>
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-bootstrap-fill display-5"></i>
+        <h4 class="text-light">Bootstrap</h4>
+        <p class="text-light">Form smooth and quick developement, i have build a foundation in a Frontend frame-work</p>
+      </div>
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-filetype-js display-5"></i>
+        <h4 class="text-light">JavaScript</h4>
+        <p class="text-light-start">
+          As a beginner in web development, I’ve been exploring JavaScript to build interactive 
+          features for my projects. I’ve worked with: <br>
+             ✔ DOM manipulation <br>
+             ✔ Event handling <br>
+             ✔ Basic API fetching <br>
+            ✔ Simple animations & dynamic content <br>
+        </p>
+      </div>
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-filetype-py display-5"></i>
+        <h4 class="text-light">python</h4>
+        <p class="text-light-start">
+            ✔ Core syntax & logic (loops, functions, OOP basics) <br>
+✔ Automating small tasks (file handling, web scraping with requests/BeautifulSoup) <br>
+✔ Beginner-level data analysis (Pandas, NumPy) <br>
+        </p>
+      </div>
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-filetype-php display-5"></i>
+        <h4 class="text-light">PHP & MySQL (Web Backend)</h4>
+        <p class="text-light">
+✔ Built basic dynamic websites using PHP for server-side logic. <br>
+
+✔ Worked with MySQL to create, query, and manage databases. <br>
+
+✔ Developed simple CRUD (Create, Read, Update, Delete) operations. <br>
+
+✔Learned form handling, sessions, and basic security practices.</p> <br>
+      </div>
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-filetype-c display-5"></i>
+        <h4 class="text-light">C Programming (Systems & Logic)</h4>
+        <p class="text-light">
+          
+✔ Wrote C programs to understand core programming concepts. <br>
+
+✔ Focused on memory management, pointers, and algorithms. <br>
+
+✔ Developed small projects like calculators, file handlers, and data structures. <br>
+        </p>
+      </div>
+      <div class="col-6 col-md-6 fade-in">
+        <i class="bi bi-camera-reels display-5"></i>
+        <h4 class="text-light">Film & Scriptwriting</h4>
+        <p class="text-light"> 
+✔ Wrote short film scripts, focusing on dialogue and story structure. <br>
+
+✔ Directed and edited small video projects (e.g., short films, skits). <br>
+
+✔ Experienced in pre-production (storyboarding, shot planning). <br>
+
+✔ Edited videos using DaVinci Resolve/Adobe Premiere Pro (basic skills). <br>
+
+✔ Passionate about storytelling through visual and written media.</p> <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+   <section id="contact">
+  <div class="container py-5" >
+    <h2 class="text-center section-title">Contact</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="fade-in">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn btn-success w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!--Footer-->
+   <footer>
+            <p>&copy; 2025 Ajou Kennedy. All rights reserved.</p>
+          </footer> 
+  <script>
+    // Typing effect
+    const roles = ["Frontend Developer", "Youtuber", "Blogger", "Designer"];
+    let index = 0, char = 0;
+    let typingText = document.getElementById("typing-text");
+
+    function typeEffect() {
+      if (char < roles[index].length) {
+        typingText.textContent += roles[index].charAt(char);
+        char++;
+        setTimeout(typeEffect, 100);
+      } else {
+        setTimeout(() => {
+          typingText.textContent = "";
+          char = 0;
+          index = (index + 1) % roles.length;
+          typeEffect();
+        }, 1500);
+      }
+    }
+
+    window.onload = () => {
+      typeEffect();
+      const animated = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      animated.forEach(el => observer.observe(el));
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
